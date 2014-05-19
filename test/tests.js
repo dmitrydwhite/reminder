@@ -6,7 +6,7 @@ var dulyNoted = function () {
 	console.log('Test log');
 };
 
-var testDate = new Date(2014, 4, 19, 4, 27, 0);
+var testDate = new Date(2014, 4, 19, 12, 16, 0);
 
 describe('_.remind()', function() {
 	it('accepts two parameters', function() {
@@ -20,6 +20,6 @@ describe('_.remind()', function() {
 	it('accepts a number and a function, and performs the function', function(done) {
 		expect(_.remind(testDate, function() {
 			done();
-		})).to.eql(1);
+		})).to.eql(0);
 	});
 });
